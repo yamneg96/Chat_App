@@ -17,4 +17,4 @@ class MyApp extends StatelessWidget {
       theme: lightMode,
     );  // Material App
   }
-}
+} //Stopped @ 3:27 => https://www.youtube.com/watch?v=5xU5WH2kEc0
