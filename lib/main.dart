@@ -13,8 +13,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const LoginPage(),
+      home: scaffold(
+        backgroundColor: const Color.fromARGB(255, 54, 140, 184),
+        appBar: AppBar(
+          title: const Text('Login Page'),
+          centerTitle: true,
+          backgroundColor: const Color.fromARGB(255, 21, 158, 226),
+        ),
+      ),
+      //Scaffold is a white screen.
       theme: ThemeData.light(), // Use the default light theme
     ); // Material App
   }
+
+  scaffold({Color? backgroundColor, required AppBar appBar}) {}
 }
